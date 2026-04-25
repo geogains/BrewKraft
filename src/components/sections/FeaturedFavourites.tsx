@@ -26,7 +26,7 @@ const favourites = [
     tint: "dark" as const,
   },
   {
-    name: "Loaded Fries",
+    name: "Loaded Croissants",
     category: "Comfort Food",
     description: "Crispy fries loaded with your choice of toppings. The kind of dish people come in specifically for.",
     badge: "Fan Favourite",
@@ -71,20 +71,16 @@ export function FeaturedFavourites() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-[#EDE8DC] py-20 sm:py-28 lg:py-32">
-      {/* Background image overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
-      />
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-[#1C1C1C] py-20 sm:py-28 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
-          <div className="max-w-xl">
+          <div className="max-w-xl lg:max-w-3xl">
             <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
               <span className="w-8 h-px bg-[#608552]" />
               Menu Highlights
             </div>
-            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
+            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-normal lg:whitespace-nowrap">
               Signature Serves.
             </h2>
           </div>

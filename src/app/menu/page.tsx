@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Menu",
   description:
-    "Explore Cafe 23's full menu — Colombian coffee, ceremonial matcha, Kashmiri chai, freshly baked pastries, loaded fries, mac & cheese, and more. Walsall's favourite independent café.",
+    "Explore Cafe 23's full menu — Colombian coffee, ceremonial matcha, Kashmiri chai, freshly baked pastries, loaded croissants, mac & cheese, and more. Walsall's favourite independent café.",
 };
 
 function BadgePill({ text }: { text: string }) {
@@ -44,7 +44,7 @@ export default function MenuPage() {
             Our Menu
           </h1>
           <p className="text-white/60 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            From our signature Colombian coffee to our legendary loaded fries —
+            From our signature Colombian coffee to our legendary loaded croissants —
             everything is made with care and served with warmth.
           </p>
           <p className="mt-4 text-[#8FAB82] text-sm">

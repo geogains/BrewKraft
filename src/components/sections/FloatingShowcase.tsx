@@ -43,7 +43,7 @@ const floatingItems = [
   },
   {
     src: "/images/5.png",
-    alt: "Loaded Fries",
+    alt: "Loaded Croissants",
     delay: "1s",
     animation: "animate-float-gentle",
     rotation: "rotate-1",
@@ -101,7 +101,28 @@ export function FloatingShowcase() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border border-[#608552]/10 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[#608552]/5 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Top wave separator */}
+      <div className="absolute top-0 left-0 w-full pointer-events-none">
+        <svg
+          viewBox="0 0 1440 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto block"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 82 L0 40 Q360 0 720 40 Q1080 80 1440 40 L1440 82 Z"
+            fill="#F7F2E9"
+          />
+        </svg>
+      </div>
+
+      {/* Background image overlay */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Glass container */}
         <div className="rounded-3xl border border-white/50 bg-white/15 shadow-2xl shadow-black/5 backdrop-blur-sm">
         <div className="relative min-h-[480px] sm:min-h-[560px] lg:min-h-[600px] flex items-center justify-center">

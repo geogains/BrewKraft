@@ -45,6 +45,9 @@ export default function AboutPage() {
                               radial-gradient(circle at 80% 30%, #8FAB82 0%, transparent 40%)`,
           }}
         />
+        <div
+          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+        />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="inline-flex items-center gap-2 text-[#8FAB82] text-xs font-semibold uppercase tracking-widest mb-6">
             <span className="w-8 h-px bg-[#8FAB82]" />
@@ -110,7 +113,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Our food is honest and comforting — freshly baked pastries, hand-made cakes, and
-                  the kind of loaded fries and mac &amp; cheese that people genuinely come in specifically
+                  the kind of loaded croissants and mac &amp; cheese that people genuinely come in specifically
                   to eat. Nothing is an afterthought.
                 </p>
                 <p>

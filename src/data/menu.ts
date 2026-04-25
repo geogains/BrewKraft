@@ -173,7 +173,7 @@ export const menuCategories: MenuCategory[] = [
     icon: "🍳",
     items: [
       {
-        name: "Loaded Fries",
+        name: "Loaded Croissants",
         description: "Crispy seasoned fries loaded with your choice of toppings. A proper treat.",
         price: "£5.50",
         badge: "Signature",

@@ -49,6 +49,9 @@ export default function VisitPage() {
                               radial-gradient(circle at 70% 30%, #4A6B3E 0%, transparent 50%)`,
           }}
         />
+        <div
+          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+        />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 text-white/60 text-xs font-semibold uppercase tracking-widest mb-6">
             <span className="w-8 h-px bg-white/40" />

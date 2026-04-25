@@ -10,7 +10,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 export const metadata: Metadata = {
   title: "Cafe 23 | Independent Café in Walsall",
   description:
-    "Cafe 23 is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded fries, and freshly baked pastries — in the heart of Walsall.",
+    "Cafe 23 is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries — in the heart of Walsall.",
 };
 
 export default function HomePage() {

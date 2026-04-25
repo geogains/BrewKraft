@@ -16,17 +16,17 @@ const navLinks = [
 const deliveryLinks = [
   {
     href: "https://www.just-eat.co.uk/restaurants-cafe-23-walsall/menu",
-    src: "/images/just-eat.png",
+    src: "/images/just-eat1.png",
     alt: "Order on Just Eat",
   },
   {
     href: "https://www.ubereats.com/gb/store/cafe-23/yQwEUhqcWJ-_r4xQKYkH1w?diningMode=DELIVERY&surfaceName=",
-    src: "/images/uber-eats.png",
+    src: "/images/uber-eats1.png",
     alt: "Order on Uber Eats",
   },
   {
     href: "https://deliveroo.co.uk/menu/Birmingham/walsall-city-centre/cafe-23-27-park-street?day=today&geohash=gcqe4v4gmh5n&time=ASAP",
-    src: "/images/deliveroo.png",
+    src: "/images/deliveroo1.png",
     alt: "Order on Deliveroo",
   },
 ];
@@ -81,18 +81,11 @@ export function Header() {
               <div className="flex items-center gap-3 pl-6 border-l border-white/20">
                 {deliveryLinks.map((dl) => (
                   <a key={dl.href} href={dl.href} target="_blank" rel="noopener noreferrer" aria-label={dl.alt}>
-                    <Image src={dl.src} alt={dl.alt} height={32} width={100} className="h-8 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
+                    <Image src={dl.src} alt={dl.alt} height={48} width={72} className="h-12 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
                   </a>
                 ))}
               </div>
             </nav>
-
-            <Link
-              href="/menu"
-              className="inline-flex items-center justify-center rounded-full bg-[#F7F2E9] px-6 py-3 text-sm font-semibold text-[#1C1C1C] transition hover:opacity-90"
-            >
-              See the Menu
-            </Link>
           </div>
         </div>
 
@@ -148,11 +141,11 @@ export function Header() {
 
           {/* Delivery platform icons */}
           <div className="mt-8 border-t border-[#DDD5C6] pt-6">
-            <p className="text-center text-xs uppercase tracking-wide text-[#888] mb-4">Delivery</p>
+            <p className="text-center text-xs uppercase tracking-wide text-[#888] mb-4">Our Delivery Partners</p>
             <div className="flex items-center justify-center gap-5">
               {deliveryLinks.map((dl) => (
                 <a key={dl.href} href={dl.href} target="_blank" rel="noopener noreferrer" aria-label={dl.alt}>
-                  <Image src={dl.src} alt={dl.alt} height={40} width={120} className="h-10 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
+                  <Image src={dl.src} alt={dl.alt} height={48} width={72} className="h-12 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
                 </a>
               ))}
             </div>

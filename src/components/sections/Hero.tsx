@@ -55,7 +55,7 @@ export function Hero() {
               className="text-white/75 text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg mb-10 animate-fade-up"
               style={{ animationDelay: "0.15s" }}
             >
-              Colombian coffee. Signature matcha. Kashmiri chai. Loaded fries.
+              Colombian coffee. Signature matcha. Kashmiri chai. Loaded croissants.
               A cosy space for working, catching up, or simply switching off.
             </p>
 
@@ -100,21 +100,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom wave / section transition */}
-      <div className="absolute bottom-0 left-0 right-0 z-10">
-        <svg
-          viewBox="0 0 1440 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto block"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0 82 L0 40 Q360 0 720 40 Q1080 80 1440 40 L1440 82 Z"
-            fill="#F7F2E9"
-          />
-        </svg>
-      </div>
     </section>
   );
 }

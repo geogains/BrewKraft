@@ -28,7 +28,7 @@ export const reviews: Review[] = [
   {
     name: "Liam B.",
     rating: 5,
-    text: "Walsall needed somewhere like this. The Colombian coffee is proper — strong, smooth, and nothing like you'd get at a chain. The loaded fries are a must-order.",
+    text: "Walsall needed somewhere like this. The Colombian coffee is proper — strong, smooth, and nothing like you'd get at a chain. The loaded croissants are a must-order.",
     highlight: "Walsall needed somewhere like this.",
   },
   {
