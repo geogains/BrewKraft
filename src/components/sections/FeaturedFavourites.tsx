@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { ImagePlaceholder } from "@/components/shared/ImagePlaceholder";
 
 const favourites = [
   {
@@ -103,20 +102,12 @@ export function FeaturedFavourites() {
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
-                {"image" in item ? (
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <ImagePlaceholder
-                    label={`${item.name} photo`}
-                    tint={item.tint}
-                    className="w-full h-full group-hover:scale-105 transition-transform duration-500"
-                  />
-                )}
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover"
+                />
                 {/* Badge */}
                 <div className="absolute top-4 left-4 bg-[#608552] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
                   {item.badge}
