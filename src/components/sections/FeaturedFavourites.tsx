@@ -92,9 +92,8 @@ export function FeaturedFavourites({ mode = "home" }: Props) {
   };
 
   return (
-    <section ref={sectionRef} className="relative bg-[#EDE8DC] py-20 sm:py-28 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-[#F7F2E9] py-20 sm:py-28 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
           <div className="max-w-xl lg:max-w-3xl">

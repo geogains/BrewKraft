@@ -86,7 +86,7 @@ export function FloatingShowcase() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#F7F2E9] pt-32 sm:pt-40 pb-20 sm:pb-28 lg:pb-36 overflow-hidden"
+      className="relative bg-[#EDE8DC] pt-32 sm:pt-40 pb-20 sm:pb-28 lg:pb-36 overflow-hidden"
     >
       {/* Background orb */}
       <div
@@ -117,6 +117,7 @@ export function FloatingShowcase() {
         </svg>
       </div>
 
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Glass container */}
         <div className="rounded-3xl border border-white/50 bg-white/15 shadow-2xl shadow-black/5 backdrop-blur-sm">
