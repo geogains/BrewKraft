@@ -39,9 +39,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     siteName: "Cafe 23",
-    title: "Cafe 23 | Independent Café in Walsall",
-    description:
-      "Rich Colombian coffee, signature matcha, Kashmiri chai, and comfort food. Walsall's cosiest independent café.",
+    title: "Cafe 23",
+    description: "Colombian coffee. Signature matcha. Kashmiri chai. A cosy space in Walsall.",
+    url: "https://cafe23-three.vercel.app/",
+    images: [
+      {
+        url: "https://cafe23-three.vercel.app/images/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Cafe 23 preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cafe 23",
+    description: "Colombian coffee. Signature matcha. Kashmiri chai.",
+    images: ["https://cafe23-three.vercel.app/images/preview.png"],
   },
   icons: {
     icon: "/images/favicon.png",
