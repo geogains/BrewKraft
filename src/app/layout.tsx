@@ -19,6 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cafe23-three.vercel.app"),
   title: {
     default: "Cafe 23 | Independent Café in Walsall",
     template: "%s | Cafe 23 Walsall",
