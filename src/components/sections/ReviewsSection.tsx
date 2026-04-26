@@ -30,16 +30,17 @@ export function ReviewsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-[#F7F2E9] py-20 sm:py-28 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="relative bg-[#1C1C1C] py-20 sm:py-28 lg:py-32 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
-            <span className="w-8 h-px bg-[#608552]" />
+          <div className="reveal inline-flex items-center gap-2 text-[#8FAB82] text-xs font-semibold uppercase tracking-widest mb-4">
+            <span className="w-8 h-px bg-[#8FAB82]" />
             What People Are Saying
-            <span className="w-8 h-px bg-[#608552]" />
+            <span className="w-8 h-px bg-[#8FAB82]" />
           </div>
-          <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight mb-6">
+          <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Loved by Walsall.
           </h2>
 
@@ -107,7 +108,7 @@ export function ReviewsSection() {
             href="https://www.google.com/maps/search/Cafe+23+Walsall"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#608552] font-semibold text-sm hover:text-[#4A6B3E] transition-colors border-b border-[#608552]/30 hover:border-[#608552] pb-0.5"
+            className="inline-flex items-center gap-2 text-[#8FAB82] font-semibold text-sm hover:text-white transition-colors border-b border-[#8FAB82]/30 hover:border-[#8FAB82] pb-0.5"
           >
             Read all reviews on Google →
           </a>

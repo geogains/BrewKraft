@@ -34,12 +34,8 @@ export function AboutPreview() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-[#1C1C1C] py-20 sm:py-28 lg:py-32 overflow-hidden">
-      {/* Background image overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
-      />
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-[#F7F2E9] py-20 sm:py-28 lg:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left — image */}
           <div className="reveal relative">
@@ -62,18 +58,18 @@ export function AboutPreview() {
 
           {/* Right — copy */}
           <div>
-            <div className="reveal inline-flex items-center gap-2 text-[#8FAB82] text-xs font-semibold uppercase tracking-widest mb-6">
-              <span className="w-8 h-px bg-[#8FAB82]" />
+            <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-6">
+              <span className="w-8 h-px bg-[#608552]" />
               Our Story
             </div>
 
-            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
+            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight mb-8">
               Born in Walsall.
               <br />
-              <span className="text-[#8FAB82]">Built for it.</span>
+              <span className="text-[#608552]">Built for it.</span>
             </h2>
 
-            <div className="reveal space-y-5 text-white/65 text-base sm:text-lg leading-relaxed">
+            <div className="reveal space-y-5 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
               <p>
                 Cafe 23 started with a simple belief: that Walsall deserved a café that felt genuinely
                 special. Not a chain. Not a formula. A real, independent space with good coffee,
@@ -93,9 +89,9 @@ export function AboutPreview() {
             {/* Stats row */}
             <div className="reveal grid grid-cols-2 gap-4 mt-10 mb-10">
               {stats.map((s) => (
-                <div key={s.label} className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-5 py-4">
-                  <div className="font-display text-2xl font-bold text-[#8FAB82]">{s.value}</div>
-                  <div className="text-white/40 text-xs mt-1 flex items-center gap-1.5">
+                <div key={s.label} className="bg-white border border-[#E4DDD1] rounded-2xl px-5 py-4">
+                  <div className="font-display text-2xl font-bold text-[#608552]">{s.value}</div>
+                  <div className="text-[#1C1C1C] text-xs mt-1 flex items-center gap-1.5">
                     {s.logoSrc && (
                       <Image
                         src={s.logoSrc}

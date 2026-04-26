@@ -17,8 +17,8 @@ export default function HomePage() {
     <>
       <FloatingShowcase />
       <FeaturedFavourites />
-      <ReviewsSection />
       <AboutPreview />
+      <ReviewsSection />
       <VisitSection />
       <FinalCTA />
     </>
