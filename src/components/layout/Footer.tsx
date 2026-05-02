@@ -13,21 +13,21 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/images/cafe23logo.png"
-                alt="Cafe 23 logo"
+                src="/images/blendlogo1.png"
+                alt="Blend logo"
                 height={36}
                 width={144}
                 className="h-9 w-auto object-contain"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              Walsall&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
+              Penkridge&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
             </p>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#608552] mb-5">Explore</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#e2ca8f] mb-5">Explore</h3>
             <ul className="space-y-3">
               {[
                 { href: "/",      label: "Home" },
@@ -49,9 +49,9 @@ export function Footer() {
 
           {/* Location */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#608552] mb-5">Find Us</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#e2ca8f] mb-5">Find Us</h3>
             <div className="flex items-start gap-2 text-white/60 text-sm">
-              <MapPin className="w-4 h-4 text-[#608552] flex-shrink-0 mt-0.5" />
+              <MapPin className="w-4 h-4 text-[#e2ca8f] flex-shrink-0 mt-0.5" />
               <address className="not-italic leading-relaxed">
                 {siteConfig.address.line2}<br />
                 {siteConfig.address.line1}<br />
@@ -62,7 +62,7 @@ export function Footer() {
               href={`https://maps.google.com/?q=${encodeURIComponent(siteConfig.address.full)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 mt-4 text-[#608552] text-sm hover:text-[#8FAB82] transition-colors font-medium"
+              className="inline-flex items-center gap-1.5 mt-4 text-[#e2ca8f] text-sm hover:text-[#f7e8b8] transition-colors font-medium"
             >
               Get directions →
             </a>
@@ -70,9 +70,9 @@ export function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#608552] mb-5">Opening Hours</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#e2ca8f] mb-5">Opening Hours</h3>
             <div className="flex items-start gap-2 text-white/60 text-sm mb-3">
-              <Clock className="w-4 h-4 text-[#608552] flex-shrink-0 mt-0.5" />
+              <Clock className="w-4 h-4 text-[#e2ca8f] flex-shrink-0 mt-0.5" />
               <span>Hours vary, see below</span>
             </div>
             <ul className="space-y-1.5">
@@ -92,8 +92,8 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/30">
-          <span>© {new Date().getFullYear()} Cafe 23. All rights reserved.</span>
-          <span>Walsall, West Midlands</span>
+          <span>© {new Date().getFullYear()} Blend. All rights reserved.</span>
+          <span>Penkridge, West Midlands</span>
         </div>
       </div>
     </footer>

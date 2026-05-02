@@ -6,8 +6,8 @@ import { menuCategories, type MenuItem } from "@/data/menu";
 import Link from "next/link";
 
 const featuredPicks = [
-  { name: "Iced Matcha Latte", category: "Speciality Drinks", badge: "Most Popular", image: "/images/icematcha.png", scrollTo: "iced-drinks" },
-  { name: "Ferrero Rocher Ice Cream Shake", category: "Milkshakes", badge: "Must Try", image: "/images/ferrerorocher.png", scrollTo: "milkshakes" },
+  { name: "Strawberry Milkshake", category: "Milkshakes", badge: "Most Popular", image: "/images/strawberrymilkshake.png", scrollTo: "milkshakes" },
+  { name: "Chocolate Cake", category: "New York-Style Desserts", badge: "Must Try", image: "/images/chococake.png", scrollTo: "brownies-cookies" },
   { name: "Signature Mac and Cheese", category: "House Specials", badge: "Our Signature", image: "/images/macncheese.png", scrollTo: "house-specials" },
   { name: "Chicken Pizza Bagel", category: "House Specials", badge: "Fan Favourite", image: "/images/chickenbagel.png", scrollTo: "house-specials" },
   { name: "Galaxy Ripple Brownie", category: "New York-Style Desserts", badge: "Sweet Treat", image: "/images/galaxybrownie1.png", scrollTo: "brownies-cookies" },
@@ -21,7 +21,7 @@ function scrollToSection(id: string) {
 
 function BadgePill({ text }: { text: string }) {
   return (
-    <span className="inline-flex items-center bg-[#608552]/10 text-[#608552] text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
+    <span className="inline-flex items-center bg-[#f4e19f]/10 text-[#3d1700] text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
       {text}
     </span>
   );
@@ -29,15 +29,15 @@ function BadgePill({ text }: { text: string }) {
 
 function MenuRow({ item }: { item: MenuItem }) {
   return (
-    <div className="flex items-start justify-between gap-6 py-4 border-b border-[#F0EBE3] last:border-0">
+    <div className="flex items-start justify-between gap-6 py-4 border-b border-[#E4DDD1] last:border-0">
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap mb-0.5">
           <span className="font-semibold text-[#1C1C1C] text-sm leading-snug">{item.name}</span>
           {item.badge && <BadgePill text={item.badge} />}
         </div>
-        <p className="text-[#888] text-xs leading-relaxed">{item.description}</p>
+        <p className="text-[#5A5A5A] text-xs leading-relaxed">{item.description}</p>
       </div>
-      <span className="font-bold text-[#608552] text-sm flex-shrink-0 pt-0.5">{item.price}</span>
+      <span className="font-bold text-[#3d1700] text-sm flex-shrink-0 pt-0.5">{item.price}</span>
     </div>
   );
 }
@@ -47,15 +47,17 @@ function SubGroup({
   items,
   dark = false,
   id,
+  highlight = false,
 }: {
   title: string;
   items: MenuItem[];
   dark?: boolean;
   id?: string;
+  highlight?: boolean;
 }) {
   return (
     <div id={id} className={`reveal${id ? " scroll-mt-32" : ""}`}>
-      <h3 className={`font-display text-xl sm:text-2xl font-bold mb-4 pb-2 border-b-2 ${dark ? "text-white border-white/20" : "text-[#1C1C1C] border-[#608552]/20"}`}>
+      <h3 className={`font-display text-xl sm:text-2xl font-bold mb-4 pb-2 border-b-2 ${dark ? "text-[#e2ca8c] border-white/20" : highlight ? "text-[#3d1700] border-[#E4DDD1]" : "text-[#3d1700] border-[#E4DDD1]"}`}>
         {title}
       </h3>
       <div className="bg-white rounded-2xl border border-[#E4DDD1] px-5 sm:px-6">
@@ -67,14 +69,14 @@ function SubGroup({
   );
 }
 
-function SectionHeader({ label, title, dark = false }: { label: string; title: string; dark?: boolean }) {
+function SectionHeader({ label, title, dark = false, highlight = false }: { label: string; title: string; dark?: boolean; highlight?: boolean }) {
   return (
     <div className="reveal mb-12">
-      <div className={`inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest mb-3 ${dark ? "text-[#8FAB82]" : "text-[#608552]"}`}>
-        <span className={`w-8 h-px ${dark ? "bg-[#8FAB82]" : "bg-[#608552]"}`} />
+      <div className={`inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest mb-3 ${dark ? "text-[#f7e8b8]" : "text-[#3d1700]"}`}>
+        <span className={`w-8 h-px ${dark ? "bg-[#f7e8b8]" : "bg-[#3d1700]"}`} />
         {label}
       </div>
-      <h2 className={`font-display text-4xl sm:text-5xl font-bold ${dark ? "text-white" : "text-[#1C1C1C]"}`}>
+      <h2 className={`font-display text-4xl sm:text-5xl font-bold ${dark ? "text-white" : highlight ? "text-[#d1b15e]" : "text-[#1C1C1C]"}`}>
         {title}
       </h2>
     </div>
@@ -115,7 +117,7 @@ export default function MenuPage() {
       <section className="relative bg-[#1C1C1C] pt-32 sm:pt-40 pb-20 sm:pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/menu-hero.png"
+            src="/images/menu-hero2.png"
             alt=""
             fill
             className="object-cover object-center"
@@ -124,10 +126,10 @@ export default function MenuPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="reveal inline-flex items-center gap-2 text-[#8FAB82] text-xs font-semibold uppercase tracking-widest mb-5">
-            <span className="w-8 h-px bg-[#8FAB82]" />
-            Cafe 23
-            <span className="w-8 h-px bg-[#8FAB82]" />
+          <div className="reveal inline-flex items-center gap-2 text-[#f7e8b8] text-xs font-semibold uppercase tracking-widest mb-5">
+            <span className="w-8 h-px bg-[#f7e8b8]" />
+            Blend
+            <span className="w-8 h-px bg-[#f7e8b8]" />
           </div>
           <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
             Our Menu
@@ -136,7 +138,7 @@ export default function MenuPage() {
             From our signature Colombian coffee to our legendary loaded croissants, 
             everything is made with care and served with warmth.
           </p>
-          <p className="reveal mt-4 text-[#8FAB82] text-sm">
+          <p className="reveal mt-4 text-[#f7e8b8] text-sm">
             All items are subject to availability. Speak to our team about allergens and dietary needs.
           </p>
         </div>
@@ -156,7 +158,7 @@ export default function MenuPage() {
                 key={id}
                 type="button"
                 onClick={() => scrollToSection(id)}
-                className="flex-shrink-0 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full border border-[#E4DDD1] bg-white hover:bg-[#608552] hover:text-white hover:border-[#608552] transition-all duration-200 text-[#5A5A5A]"
+                className="flex-shrink-0 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full border border-[#E4DDD1] bg-white hover:bg-[#e3c989] hover:text-white hover:border-[#e3c989] transition-colors duration-200 text-[#5A5A5A]"
               >
                 {label}
               </button>
@@ -170,8 +172,8 @@ export default function MenuPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
             <div className="max-w-xl lg:max-w-3xl">
-              <div className="inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
-                <span className="w-8 h-px bg-[#608552]" />
+              <div className="inline-flex items-center gap-2 text-[#3d1700] text-xs font-semibold uppercase tracking-widest mb-4">
+                <span className="w-8 h-px bg-[#3d1700]" />
                 Menu Highlights
               </div>
               <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
@@ -190,12 +192,12 @@ export default function MenuPage() {
                 <article className="reveal group bg-white rounded-3xl overflow-hidden border border-[#E4DDD1] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="relative h-52 overflow-hidden">
                     <Image src={item.image} alt={item.name} fill className="object-cover" />
-                    <div className="absolute top-4 left-4 bg-[#608552] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
+                    <div className="absolute top-4 left-4 bg-[#3d1700] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
                       {item.badge}
                     </div>
                   </div>
                   <div className="p-6">
-                    <span className="text-[#608552] text-xs font-semibold uppercase tracking-wider">
+                    <span className="text-[#e2ca8c] text-xs font-semibold uppercase tracking-wider">
                       {item.category}
                     </span>
                     <h3 className="font-display text-xl font-bold text-[#1C1C1C] mt-1">
@@ -209,37 +211,34 @@ export default function MenuPage() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="bg-[#F7F2E9] py-2">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-px bg-black/10" />
-        </div>
-      </div>
+
 
       {/* Drinks */}
-      <section id="drinks" className="bg-[#F7F2E9] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
+      <section id="drinks" className="bg-[#fff7dd] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader label="Hot & Cold" title="Drinks" />
           <div className="space-y-10">
-            <SubGroup title="Coffee & Matcha" items={cat("hot-drinks").items} />
-            <SubGroup id="iced-drinks" title="Iced Drinks" items={cat("cold-drinks").items} />
-            <SubGroup id="milkshakes" title="Milkshakes" items={cat("milkshakes").items} />
+            <SubGroup title="Coffee & Matcha" items={cat("hot-drinks").items} highlight />
+            <SubGroup id="iced-drinks" title="Iced Drinks" items={cat("cold-drinks").items} highlight />
+            <SubGroup id="milkshakes" title="Milkshakes" items={cat("milkshakes").items} highlight />
             <SubGroup
               id="mojitos-refreshers"
               title="Mojitos & Refreshers"
               items={[...cat("mojitos").items, ...cat("smoothies").items]}
+              highlight
             />
             <SubGroup
               title="Frappé & Specials"
               items={[...cat("frappe").items, ...cat("viral").items]}
+              highlight
             />
           </div>
         </div>
       </section>
 
       {/* Food — with bg.png overlay */}
-      <section id="food" className="relative bg-[#EDE8DC] py-16 sm:py-24 overflow-hidden scroll-mt-32 sm:scroll-mt-40">
-        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <section id="food" className="relative bg-[#F7F2E9] py-16 sm:py-24 overflow-hidden scroll-mt-32 sm:scroll-mt-40">
+        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader label="House Made" title="Food" />
           <div className="space-y-10">
@@ -250,22 +249,22 @@ export default function MenuPage() {
       </section>
 
       {/* Desserts */}
-      <section id="desserts" className="bg-[#F7F2E9] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
+      <section id="desserts" className="bg-[#fff7dd] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader label="Sweet Things" title="Desserts" />
           <div className="space-y-10">
-            <SubGroup id="brownies-cookies" title="Brownies & Cookies" items={cat("ny-desserts").items} />
-            <SubGroup title="Deluxe Cheesecake" items={cat("cheesecake").items} />
-            <SubGroup title="French Patisserie" items={cat("french-patisserie").items} />
-            <SubGroup title="Waffles & Cakes" items={cat("desserts").items} />
-            <SubGroup title="Bakery" items={cat("bakery").items} />
+            <SubGroup id="brownies-cookies" title="Brownies & Cookies" items={cat("ny-desserts").items} highlight />
+            <SubGroup title="Deluxe Cheesecake" items={cat("cheesecake").items} highlight />
+            <SubGroup title="French Patisserie" items={cat("french-patisserie").items} highlight />
+            <SubGroup title="Waffles & Cakes" items={cat("desserts").items} highlight />
+            <SubGroup title="Bakery" items={cat("bakery").items} highlight />
           </div>
         </div>
       </section>
 
       {/* Kids — dark background + bg.png overlay, white headings */}
       <section id="kids" className="relative bg-[#1C1C1C] py-16 sm:py-24 overflow-hidden scroll-mt-32 sm:scroll-mt-40">
-        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader label="Little Ones" title="Kids Menu" dark />
           <div className="space-y-10">
@@ -289,7 +288,7 @@ export default function MenuPage() {
 
       {/* Note */}
       <section className="relative bg-[#1C1C1C] py-16">
-        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+        <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
             Something for everyone.
@@ -300,9 +299,9 @@ export default function MenuPage() {
           </p>
           <Link
             href="/visit"
-            className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#e3c989] hover:bg-[#c9ad68] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
           >
-            Visit Cafe 23 →
+            Visit Blend →
           </Link>
         </div>
       </section>

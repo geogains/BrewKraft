@@ -3,9 +3,9 @@
 /* ─── Custom theme tokens ─────────────────────────────────────────────── */
 @theme inline {
   /* Brand colours */
-  --color-primary:        #608552;
-  --color-primary-dark:   #4A6B3E;
-  --color-primary-light:  #8FAB82;
+  --color-primary:        #f4e19f;
+  --color-primary-dark:   #d4c06d;
+  --color-primary-light:  #f7e8b8;
   --color-sage:           #B5CCAF;
 
   /* Neutral / background */

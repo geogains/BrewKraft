@@ -6,22 +6,22 @@ import Link from "next/link";
 
 const favourites = [
   {
-    name: "Iced Matcha Latte",
-    category: "Speciality Drinks",
-    description: "Thick ceremonial-grade matcha with your choice of milk, served over ice. Instagrammable and utterly delicious.",
+    name: "Strawberry Milkshake",
+    category: "Milkshakes",
+    description: "A rich, creamy strawberry milkshake blended to perfection with sweet strawberries and smooth vanilla ice cream.",
     badge: "Most Popular",
     tint: "green" as const,
-    image: "/images/icematcha.png",
-    scrollTo: "iced-drinks",
+    image: "/images/strawberrymilkshake.png",
+    scrollTo: "milkshakes",
   },
   {
-    name: "Ferrero Rocher Ice Cream Shake",
-    category: "Milkshakes",
-    description: "The gold standard of shakes. A decadent blend featuring genuine Ferrero Rocher chocolates and vanilla ice cream whipped into a thick dairy shake. Indulgent, nutty, and extra luxurious.",
+    name: "Chocolate Cake",
+    category: "New York-Style Desserts",
+    description: "Decadent chocolate cake layered with rich chocolate ganache, moist, indulgent, and made for true chocolate lovers.",
     badge: "Must Try",
     tint: "warm" as const,
-    image: "/images/ferrerorocher.png",
-    scrollTo: "milkshakes",
+    image: "/images/chococake.png",
+    scrollTo: "brownies-cookies",
   },
   {
     name: "Signature Mac and Cheese",
@@ -92,13 +92,13 @@ export function FeaturedFavourites({ mode = "home" }: Props) {
   };
 
   return (
-    <section ref={sectionRef} className="bg-[#F7F2E9] py-20 sm:py-28 lg:py-32">
+    <section ref={sectionRef} className="bg-[#fff7dd] py-20 sm:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
           <div className="max-w-xl lg:max-w-3xl">
-            <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
-              <span className="w-8 h-px bg-[#608552]" />
+            <div className="reveal inline-flex items-center gap-2 text-[#3d1700] text-xs font-semibold uppercase tracking-widest mb-4">
+              <span className="w-8 h-px bg-[#3d1700]" />
               Menu Highlights
             </div>
             <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight whitespace-normal lg:whitespace-nowrap">
@@ -116,13 +116,13 @@ export function FeaturedFavourites({ mode = "home" }: Props) {
                 <div className="relative h-52 overflow-hidden">
                   <Image src={item.image} alt={item.name} fill className="object-cover" />
                   {/* Badge */}
-                  <div className="absolute top-4 left-4 bg-[#608552] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
+                  <div className="absolute top-4 left-4 bg-[#3d1700] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
                     {item.badge}
                   </div>
                 </div>
                 {/* Content */}
                 <div className="p-6">
-                  <span className="text-[#608552] text-xs font-semibold uppercase tracking-wider">
+                  <span className="text-[#e2ca8c] text-xs font-semibold uppercase tracking-wider">
                     {item.category}
                   </span>
                   <h3 className="font-display text-xl font-bold text-[#1C1C1C] mt-1 mb-3">

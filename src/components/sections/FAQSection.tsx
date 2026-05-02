@@ -3,10 +3,10 @@ import Link from "next/link";
 const faqs = [
   {
     q: "Do you have Wi-Fi?",
-    a: "Yes, we have free Wi-Fi throughout the café. Cafe 23 is a favourite spot for working and studying.",
+    a: "Yes, we have free Wi-Fi throughout the café. Blend is a favourite spot for working and studying.",
   },
   {
-    q: "Is Cafe 23 family-friendly?",
+    q: "Is Blend family-friendly?",
     a: "Absolutely. We welcome families and children. The space is relaxed and there&apos;s plenty of room.",
   },
   {
@@ -29,13 +29,13 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section className="bg-[#F7F2E9] py-20 sm:py-28">
+    <section className="bg-[#fffbee] py-20 sm:py-28">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
-            <span className="w-8 h-px bg-[#608552]" />
+          <div className="inline-flex items-center gap-2 text-[#3d1700] text-xs font-semibold uppercase tracking-widest mb-4">
+            <span className="w-8 h-px bg-[#3d1700]" />
             Good to Know
-            <span className="w-8 h-px bg-[#608552]" />
+            <span className="w-8 h-px bg-[#3d1700]" />
           </div>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#1C1C1C] leading-tight">
             Frequently asked.
@@ -50,7 +50,7 @@ export function FAQSection() {
             >
               <summary className="flex items-center justify-between p-6 cursor-pointer list-none select-none">
                 <h3 className="font-semibold text-[#1C1C1C] text-base pr-4">{faq.q}</h3>
-                <span className="w-6 h-6 rounded-full border border-[#E4DDD1] flex items-center justify-center flex-shrink-0 group-open:bg-[#608552] group-open:border-[#608552] transition-colors text-[#888] group-open:text-white text-sm font-bold">
+                <span className="w-6 h-6 rounded-full border border-[#E4DDD1] flex items-center justify-center flex-shrink-0 group-open:bg-[#f4e19f] group-open:border-[#f4e19f] transition-colors text-[#888] group-open:text-white text-sm font-bold">
                   +
                 </span>
               </summary>
@@ -70,7 +70,7 @@ export function FAQSection() {
           </p>
           <Link
             href="/visit"
-            className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#e2ca8f] hover:bg-[#c9ad68] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
           >
             Get in touch →
           </Link>

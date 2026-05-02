@@ -7,9 +7,9 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Cafe 23 | Independent Café in Walsall",
+  title: "Blend | Independent Café in Penkridge",
   description:
-    "Cafe 23 is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries, in the heart of Walsall.",
+    "Blend is Penkridge's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries, in the heart of Penkridge.",
 };
 
 export default function HomePage() {

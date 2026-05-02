@@ -51,7 +51,7 @@ const floatingItems = [
     position: "bottom-20 left-[2%] sm:left-[8%]",
   },
   {
-    src: "/images/7.png",
+    src: "/images/cup1.png",
     alt: "Pastry",
     delay: "1.6s",
     animation: "animate-float-slow",
@@ -86,14 +86,14 @@ export function FloatingShowcase() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#EDE8DC] pt-32 sm:pt-40 pb-20 sm:pb-28 lg:pb-36 overflow-hidden"
+      className="relative bg-[#3d1700] pt-32 sm:pt-40 pb-20 sm:pb-28 lg:pb-36 overflow-hidden"
     >
-      {/* Background orb */}
+      {/* Radial gradient overlay */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+        className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
-          background: `radial-gradient(circle, #608552/15 0%, transparent 70%)`,
-          opacity: 0.6,
+          backgroundImage: `radial-gradient(circle at 30% 50%, #f7e8b8 0%, transparent 60%),
+                            radial-gradient(circle at 70% 30%, #c9ad68 0%, transparent 50%)`,
         }}
       />
 
@@ -117,7 +117,7 @@ export function FloatingShowcase() {
         </svg>
       </div>
 
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Glass container */}
         <div className="rounded-3xl border border-white/50 bg-white/15 shadow-2xl shadow-black/5 backdrop-blur-sm">
@@ -125,11 +125,11 @@ export function FloatingShowcase() {
           {/* Central text */}
           <div className="relative z-10 text-center max-w-lg px-4">
             {/* DESKTOP HEADING SIZE CONTROL — adjust lg/xl values here */}
-            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1C1C1C] leading-tight mb-6">
-              GIVE THE <span className="text-[#608552]">PEOPLE</span> WHAT THEY WANT!
+            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
+              MORE <span className="text-[#fff7d6]">ESPRESSO,</span> LESS <span className="text-[#3d1700]">DEPRESSO!</span>
             </h2>
-            <div className="reveal bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5">
-              <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
+            <div className="reveal mt-10 sm:mt-12 lg:mt-0 bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5">
+              <p className="text-[#fff7d6] text-base sm:text-lg leading-relaxed">
                 From our silky matcha lattes to our legendary loaded croissants, everything on the menu is made to make your day a little better.
               </p>
             </div>
@@ -160,7 +160,7 @@ export function FloatingShowcase() {
         <div className="reveal text-center mt-8">
           <Link
             href="/menu"
-            className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
+            className="inline-flex items-center gap-2 bg-[#e2ca8f] hover:bg-[#c9ad68] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
           >
             View Full Menu
           </Link>

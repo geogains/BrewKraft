@@ -18,7 +18,7 @@ export function StarRating({ rating, className, size = "md" }: Props) {
           className={cn(
             sizes[size],
             i <= Math.round(rating)
-              ? "fill-[#608552] text-[#608552]"
+              ? "fill-[#f4e19f] text-[#f4e19f]"
               : "fill-[#D1C9BC] text-[#D1C9BC]"
           )}
         />

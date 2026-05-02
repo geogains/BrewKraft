@@ -31,23 +31,23 @@ export function ReviewsSection() {
 
   return (
     <section ref={sectionRef} className="relative bg-[#1C1C1C] py-20 sm:py-28 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="reveal inline-flex items-center gap-2 text-[#8FAB82] text-xs font-semibold uppercase tracking-widest mb-4">
-            <span className="w-8 h-px bg-[#8FAB82]" />
+          <div className="reveal inline-flex items-center gap-2 text-[#f7e8b8] text-xs font-semibold uppercase tracking-widest mb-4">
+            <span className="w-8 h-px bg-[#f7e8b8]" />
             What People Are Saying
-            <span className="w-8 h-px bg-[#8FAB82]" />
+            <span className="w-8 h-px bg-[#f7e8b8]" />
           </div>
           <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Loved by Walsall.
+            Loved by Penkridge.
           </h2>
 
           {/* Rating badge */}
           <div className="reveal inline-flex flex-col sm:flex-row items-center gap-4 bg-white border border-[#E4DDD1] rounded-2xl px-8 py-5 shadow-sm">
             <div className="text-center">
-              <div className="font-display text-5xl font-bold text-[#608552]">{siteConfig.rating}</div>
+              <div className="font-display text-5xl font-bold text-[#f4e19f]">{siteConfig.rating}</div>
               <div className="text-[#5A5A5A] text-xs mt-1">{siteConfig.reviewCount} Google reviews</div>
             </div>
             <div className="hidden sm:block h-12 w-px bg-[#E4DDD1]" />
@@ -78,7 +78,7 @@ export function ReviewsSection() {
               {/* Header */}
               <div className="flex items-center justify-between mb-5">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#608552]/15 flex items-center justify-center text-[#608552] font-bold text-sm">
+                  <div className="w-10 h-10 rounded-full bg-[#f4e19f]/15 flex items-center justify-center text-[#f4e19f] font-bold text-sm">
                     {review.name.charAt(0)}
                   </div>
                   <div>
@@ -86,7 +86,7 @@ export function ReviewsSection() {
                     <StarRating rating={review.rating} size="sm" />
                   </div>
                 </div>
-                <Quote className="w-5 h-5 text-[#608552]/30" />
+                <Quote className="w-5 h-5 text-[#f4e19f]/30" />
               </div>
 
               {/* Highlight quote */}
@@ -108,7 +108,7 @@ export function ReviewsSection() {
             href="https://www.google.com/maps/search/Cafe+23+Walsall"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#8FAB82] font-semibold text-sm hover:text-white transition-colors border-b border-[#8FAB82]/30 hover:border-[#8FAB82] pb-0.5"
+            className="inline-flex items-center gap-2 text-[#f7e8b8] font-semibold text-sm hover:text-white transition-colors border-b border-[#f7e8b8]/30 hover:border-[#f7e8b8] pb-0.5"
           >
             Read all reviews on Google →
           </a>

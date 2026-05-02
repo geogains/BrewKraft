@@ -1,50 +1,33 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 import { StarRating } from "@/components/shared/StarRating";
 import { siteConfig } from "@/data/site";
 
 export function Hero() {
-  const heroRef = useRef<HTMLDivElement>(null);
-
-  // Subtle parallax on hero image
-  useEffect(() => {
-    const el = heroRef.current;
-    if (!el) return;
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      el.style.transform = `translateY(${scrollY * 0.3}px)`;
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Background image layer with parallax */}
-      <div ref={heroRef} className="absolute inset-0 will-change-transform">
-        <Image
-          src="/images/hero1.png"
-          alt="Inside Cafe 23, Walsall"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-      </div>
-
-      {/* Dark overlay for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#3d1700]">
+      {/* Radial gradient overlay */}
+      <div
+        className="absolute inset-0 opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: `radial-gradient(circle at 30% 50%, #f7e8b8 0%, transparent 60%),
+                            radial-gradient(circle at 70% 30%, #c9ad68 0%, transparent 50%)`,
+        }}
+      />
+      {/* Texture layer */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+      />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20">
         <div className="flex-1 flex flex-col justify-center max-w-3xl">
           {/* Headline — outside glass */}
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.05] animate-fade-up">
-            WALSALL'S<br />
-            <span className="text-[#608552]">FAVOURITE</span><br />
+            WALSALL&apos;S<br />
+            <span className="text-[#f4e19f]">FAVOURITE</span><br />
             CAFÉ.
           </h1>
 
@@ -66,7 +49,7 @@ export function Hero() {
             >
               <Link
                 href="/menu"
-                className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
+                className="inline-flex items-center gap-2 bg-[#f4e19f] hover:bg-[#d4c06d] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
               >
                 Explore the Menu
               </Link>

@@ -10,7 +10,7 @@ type Props = {
 };
 
 const tints = {
-  green: "from-[#4A6B3E]/20 to-[#608552]/30",
+  green: "from-[#d4c06d]/20 to-[#f4e19f]/30",
   warm:  "from-[#c8b89a]/30 to-[#a89070]/40",
   cream: "from-[#e8e0d0]/50 to-[#d4cfc6]/60",
   dark:  "from-[#2a2a2a]/40 to-[#1C1C1C]/50",
@@ -29,8 +29,8 @@ export function ImagePlaceholder({ label, className, tint = "cream" }: Props) {
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, #608552 1px, transparent 1px),
-                            radial-gradient(circle at 75% 75%, #608552 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle at 25% 25%, #f4e19f 1px, transparent 1px),
+                            radial-gradient(circle at 75% 75%, #f4e19f 1px, transparent 1px)`,
           backgroundSize: "40px 40px",
         }}
       />

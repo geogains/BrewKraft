@@ -53,17 +53,17 @@ export function ExperienceSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-16 sm:mb-20">
-          <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-4">
-            <span className="w-8 h-px bg-[#608552]" />
-            The Cafe 23 Experience
+          <div className="reveal inline-flex items-center gap-2 text-[#f4e19f] text-xs font-semibold uppercase tracking-widest mb-4">
+            <span className="w-8 h-px bg-[#f4e19f]" />
+            The Blend Experience
           </div>
           <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
             More than coffee.
             <br />
-            <span className="text-[#608552]">Much more.</span>
+            <span className="text-[#f4e19f]">Much more.</span>
           </h2>
           <p className="reveal text-[#5A5A5A] text-lg mt-5 leading-relaxed">
-            Cafe 23 is a space that adapts to you. Morning coffee runs, afternoon study sessions, family weekends,
+            Blend is a space that adapts to you. Morning coffee runs, afternoon study sessions, family weekends,
             or a long catch-up with someone you&apos;ve been meaning to see.
           </p>
         </div>
@@ -78,8 +78,8 @@ export function ExperienceSection() {
                 className="reveal group relative bg-white rounded-3xl p-8 sm:p-10 border border-[#E4DDD1] hover:border-[#608552]/30 hover:shadow-xl transition-all duration-300"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-2xl bg-[#608552]/10 flex items-center justify-center mb-6 group-hover:bg-[#608552] transition-colors duration-300">
-                  <Icon className="w-6 h-6 text-[#608552] group-hover:text-white transition-colors duration-300" />
+                <div className="w-12 h-12 rounded-2xl bg-[#f4e19f]/10 flex items-center justify-center mb-6 group-hover:bg-[#f4e19f] transition-colors duration-300">
+                  <Icon className="w-6 h-6 text-[#f4e19f] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="font-display text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-3 leading-snug">
                   {p.title}
@@ -93,16 +93,16 @@ export function ExperienceSection() {
         </div>
 
         {/* Atmospheric quote callout */}
-        <div className="reveal mt-16 bg-[#608552] rounded-3xl p-10 sm:p-14 text-center relative overflow-hidden">
+        <div className="reveal mt-16 bg-[#f4e19f] rounded-3xl p-10 sm:p-14 text-center relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-10"
             style={{
-              backgroundImage: `radial-gradient(circle at 20% 80%, #8FAB82 0%, transparent 50%),
-                                radial-gradient(circle at 80% 20%, #4A6B3E 0%, transparent 50%)`,
+              backgroundImage: `radial-gradient(circle at 20% 80%, #f7e8b8 0%, transparent 50%),
+                                radial-gradient(circle at 80% 20%, #d4c06d 0%, transparent 50%)`,
             }}
           />
           <p className="relative font-display text-2xl sm:text-3xl lg:text-4xl text-white font-bold leading-tight max-w-2xl mx-auto">
-            &ldquo;Feels like something Walsall really needed.&rdquo;
+            &ldquo;Feels like something Penkridge really needed.&rdquo;
           </p>
           <p className="relative text-white/60 mt-4 text-sm">— A regular visitor</p>
         </div>
