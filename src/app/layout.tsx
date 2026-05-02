@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cafe23-three.vercel.app"),
+  metadataBase: new URL("https://blend-snowy.vercel.app"),
   title: {
     default: "Blend | Independent Café in Penkridge",
     template: "%s | Blend Penkridge",
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     siteName: "Blend",
     title: "Blend",
     description: "Colombian coffee. Signature matcha. Kashmiri chai. A cosy space in Penkridge.",
-    url: "https://cafe23-three.vercel.app/",
+    url: "https://blend-snowy.vercel.app/",
     images: [
       {
-        url: "https://cafe23-three.vercel.app/images/preview2.jpg",
-        secureUrl: "https://cafe23-three.vercel.app/images/preview2.jpg",
+        url: "https://blend-snowy.vercel.app/images/preview2.png",
+        secureUrl: "https://blend-snowy.vercel.app/images/preview2.png",
         width: 1200,
         height: 630,
         alt: "Blend preview",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blend",
     description: "Colombian coffee. Signature matcha. Kashmiri chai.",
-    images: ["https://cafe23-three.vercel.app/images/preview2.jpg"],
+    images: ["https://blend-snowy.vercel.app/images/preview2.png"],
   },
   icons: {
     icon: "/images/favicon1.png",

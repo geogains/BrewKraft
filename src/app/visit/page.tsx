@@ -172,7 +172,7 @@ export default function VisitPage() {
                     <span className="text-[#1C1C1C] font-medium text-sm">{siteConfig.contact.phone}</span>
                   </a>
                   <a
-                    href="mailto:hello@cafe23walsall.co.uk?subject=Enquiry%20from%20Cafe%2023%20website"
+                    href="mailto:hello@blendpenkridge.co.uk?subject=Enquiry%20from%20Blend%20website"
                     className="flex items-center gap-4 p-4 rounded-2xl bg-[#F7F2E9] hover:bg-[#E4DDD1] transition-colors group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-[#f4e19f]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#f4e19f] transition-colors duration-200">

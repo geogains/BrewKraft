@@ -16,7 +16,7 @@ export const reviews: Review[] = [
   {
     name: "Jordan T.",
     rating: 5,
-    text: "The atmosphere here is something else. It's calm, aesthetic, and feels like a little escape. I used to struggle to find a place to work in Penkridge. Cafe 23 sorted that for me.",
+    text: "The atmosphere here is something else. It's calm, aesthetic, and feels like a little escape. I used to struggle to find a place to work in Penkridge. Blend sorted that for me.",
     highlight: "A calm, aesthetic little escape.",
   },
   {
