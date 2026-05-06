@@ -13,15 +13,15 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/images/blendlogo1.png"
-                alt="Blend logo"
-                height={36}
-                width={144}
-                className="h-9 w-auto object-contain"
+                src="/images/brewkraftlogo.png"
+                alt="BrewKraft logo"
+                height={48}
+                width={192}
+                className="h-12 w-auto object-contain"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              Penkridge&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
+              Walsall&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
             </p>
           </div>
 
@@ -73,18 +73,19 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-widest text-[#e2ca8f] mb-5">Opening Hours</h3>
             <div className="flex items-start gap-2 text-white/60 text-sm mb-3">
               <Clock className="w-4 h-4 text-[#e2ca8f] flex-shrink-0 mt-0.5" />
-              <span>Hours vary, see below</span>
+              <span>Open 7 days a week</span>
             </div>
             <ul className="space-y-1.5">
-              {siteConfig.hours.slice(0, 4).map((h) => (
-                <li key={h.day} className="flex justify-between text-sm gap-4">
-                  <span className="text-white/40">{h.day.slice(0, 3)}</span>
-                  <span className="text-white/70">{h.open} – {h.close}</span>
-                </li>
-              ))}
+              <li className="flex justify-between text-sm gap-4">
+                <span className="text-white/40">Mon – Sat</span>
+                <span className="text-white/70">08:00 – 18:00</span>
+              </li>
+              <li className="flex justify-between text-sm gap-4">
+                <span className="text-white/40">Sun</span>
+                <span className="text-white/70">09:00 – 17:00</span>
+              </li>
               <li className="text-white/40 text-xs mt-2">
-                {/* [PLACEHOLDER] Confirm actual hours */}
-                Weekend hours differ, see Visit Us page
+                Hours may vary on bank holidays.
               </li>
             </ul>
           </div>
@@ -92,8 +93,8 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/30">
-          <span>© {new Date().getFullYear()} Blend. All rights reserved.</span>
-          <span>Penkridge, West Midlands</span>
+          <span>© {new Date().getFullYear()} BrewKraft. All rights reserved.</span>
+          <span>Walsall, West Midlands</span>
         </div>
       </div>
     </footer>

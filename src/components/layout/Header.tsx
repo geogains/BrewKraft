@@ -13,21 +13,21 @@ const navLinks = [
   { href: "/visit", label: "Visit Us" },
 ];
 
-const socialLinks = [
+const deliveryPartners = [
   {
-    href: "https://www.instagram.com/blendfullstop/",
-    src: "/images/Instagram5.png",
-    alt: "Follow us on Instagram",
+    href: "https://deliveroo.co.uk/menu/birmingham/walsall-city-centre/brewkraft-works-lounge-70-lower-hall-lane?utm_campaign=organic&utm_medium=referrer&utm_source=menu_share",
+    src: "/images/deliveroo1.png",
+    alt: "Order on Deliveroo",
   },
   {
-    href: "https://www.tiktok.com/",
-    src: "/images/TikTok6.png",
-    alt: "Follow us on TikTok",
+    href: "https://www.just-eat.co.uk/restaurants-brisk-coffee-co-walsall/menu?serviceType=delivery&utm_source=google&utm_medium=organic&utm_campaign=foodorder",
+    src: "/images/just-eat1.png",
+    alt: "Order on Just Eat",
   },
   {
-    href: "https://www.facebook.com/profile.php?id=61580861931043",
-    src: "/images/Facebook6.png",
-    alt: "Follow us on Facebook",
+    href: "https://ubereats.com/gb/feed?srsltid=AfmBOorJ__9OXi3MWW4Esdw7qg_mdnzR0qaE6AyZ8ZiQXvF3R5ZWbrMa&so=https%3A%2F%2Fwww.ubereats.com%2Fgb%3Fsrsltid%3DAfmBOorJ__9OXi3MWW4Esdw7qg_mdnzR0qaE6AyZ8ZiQXvF3R5ZWbrMa&lat=52.5866367&lng=-1.984534&referrer=https%3A%2F%2Fwww.google.com%2F",
+    src: "/images/uber-eats1.png",
+    alt: "Order on Uber Eats",
   },
 ];
 
@@ -55,11 +55,11 @@ export function Header() {
           <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
             <Link href="/">
               <Image
-                src="/images/blendlogo1.png"
-                alt="Blend logo"
-                height={40}
-                width={160}
-                className="h-10 w-auto object-contain"
+                src="/images/brewkraftlogo.png"
+                alt="BrewKraft logo"
+                height={56}
+                width={224}
+                className="h-14 w-auto object-contain"
               />
             </Link>
 
@@ -78,11 +78,11 @@ export function Header() {
                   </Link>
                 );
               })}
-              {/* Social icons */}
+              {/* Delivery partners */}
               <div className="flex items-center gap-3 pl-6 border-l border-white/20">
-                {socialLinks.map((sl) => (
-                  <a key={sl.href} href={sl.href} target="_blank" rel="noopener noreferrer" aria-label={sl.alt}>
-                    <Image src={sl.src} alt={sl.alt} height={40} width={40} className="h-10 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
+                {deliveryPartners.map((dp) => (
+                  <a key={dp.src} href={dp.href} aria-label={dp.alt} target="_blank" rel="noopener noreferrer">
+                    <Image src={dp.src} alt={dp.alt} width={72} height={48} sizes="72px" className="h-12 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
                   </a>
                 ))}
               </div>
@@ -95,11 +95,11 @@ export function Header() {
           <div className="flex h-16 items-center justify-between px-4">
             <Link href="/">
               <Image
-                src="/images/blendlogo1.png"
-                alt="Blend logo"
-                height={32}
-                width={128}
-                className="h-8 w-auto object-contain"
+                src="/images/brewkraftlogo.png"
+                alt="BrewKraft logo"
+                height={44}
+                width={176}
+                className="h-11 w-auto object-contain"
               />
             </Link>
 
@@ -140,13 +140,13 @@ export function Header() {
             );
           })}
 
-          {/* Social icons */}
+          {/* Delivery partners */}
           <div className="-mx-6 px-6 py-6 bg-[#3d1700]">
-            <p className="text-center text-xs uppercase tracking-wide text-[#e2ca8c] mb-4">Follow Us</p>
+            <p className="text-center text-xs uppercase tracking-wide text-[#e2ca8c] mb-4">Delivery Partners</p>
             <div className="flex items-center justify-center gap-5">
-              {socialLinks.map((sl) => (
-                <a key={sl.href} href={sl.href} target="_blank" rel="noopener noreferrer" aria-label={sl.alt}>
-                  <Image src={sl.src} alt={sl.alt} height={40} width={40} className="h-10 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
+              {deliveryPartners.map((dp) => (
+                <a key={dp.src} href={dp.href} aria-label={dp.alt} target="_blank" rel="noopener noreferrer">
+                  <Image src={dp.src} alt={dp.alt} width={84} height={56} sizes="84px" className="h-14 w-auto object-contain rounded-md hover:scale-105 transition-transform duration-200" />
                 </a>
               ))}
             </div>

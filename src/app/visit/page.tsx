@@ -34,7 +34,7 @@ export default function VisitPage() {
           }}
         />
         <div
-          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/brewkraftbg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="reveal inline-flex items-center gap-2 text-white/60 text-xs font-semibold uppercase tracking-widest mb-6">
@@ -47,7 +47,7 @@ export default function VisitPage() {
             <br />Harder to leave.
           </h1>
           <p className="reveal text-[#e2ca8c] text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            We&apos;re right in the heart of Penkridge, inside the Saddlers Shopping Centre on Park Street. Come in, sit down, and stay a while.
+            We&apos;re right in the heart of Walsall, right next to Primark on Lower Hall Lane. Come in, sit down, and stay a while.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function VisitPage() {
                   <h2 className="font-semibold text-[#1C1C1C]">Address</h2>
                 </div>
                 <address className="not-italic text-[#5A5A5A] text-base leading-relaxed mb-4">
-                  Blend<br />
+                  BrewKraft<br />
                   {siteConfig.address.line2}<br />
                   {siteConfig.address.line1}<br />
                   {siteConfig.address.city}<br />
@@ -121,7 +121,7 @@ export default function VisitPage() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-[#1C1C1C]">By Train</p>
-                      <p className="text-sm text-[#5A5A5A] leading-relaxed">Penkridge train station is a short walk away. Follow signs towards the town centre and Saddlers Shopping Centre.</p>
+                      <p className="text-sm text-[#5A5A5A] leading-relaxed">Walsall train station is a short walk away. Follow signs towards the town centre.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -130,7 +130,7 @@ export default function VisitPage() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-[#1C1C1C]">By Bus</p>
-                      <p className="text-sm text-[#5A5A5A] leading-relaxed">Penkridge bus station is nearby. Multiple routes stop in the town centre, making us easy to reach from across the region.</p>
+                      <p className="text-sm text-[#5A5A5A] leading-relaxed">Walsall bus station is nearby. Multiple routes stop in the town centre, making us easy to reach from across the region.</p>
                     </div>
                   </div>
                 </div>
@@ -142,8 +142,8 @@ export default function VisitPage() {
               {/* Map */}
               <div className="reveal w-full h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#E4DDD1] relative bg-[#E4DDD1]">
                 <iframe
-                  src="https://www.google.com/maps?q=27%20Park%20Street%20Walsall%20WS1%201LY&output=embed"
-                  title="Blend location map"
+                  src="https://www.google.com/maps?q=70%20Lower%20Hall%20Lane%20Walsall%20WS1%201RH&output=embed"
+                  title="BrewKraft location map"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"
@@ -172,7 +172,7 @@ export default function VisitPage() {
                     <span className="text-[#1C1C1C] font-medium text-sm">{siteConfig.contact.phone}</span>
                   </a>
                   <a
-                    href="mailto:hello@blendpenkridge.co.uk?subject=Enquiry%20from%20Blend%20website"
+                    href="mailto:hello@brewkraftwalsall.co.uk?subject=Enquiry%20from%20BrewKraft%20website"
                     className="flex items-center gap-4 p-4 rounded-2xl bg-[#F7F2E9] hover:bg-[#E4DDD1] transition-colors group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-[#f4e19f]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#f4e19f] transition-colors duration-200">
@@ -186,7 +186,7 @@ export default function VisitPage() {
                 <div className="border-t border-[#E4DDD1] pt-6">
                   <p className="text-xs font-semibold uppercase tracking-widest text-[#5A5A5A] text-center mb-5">Follow Us</p>
                   <div className="flex items-center justify-center gap-5">
-                    <a href="https://www.instagram.com/blendfullstop/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
+                    <a href="https://www.instagram.com/brewkraft_/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
                       <Image
                         src="/images/Instagram2.png"
                         alt="Instagram"
@@ -204,7 +204,7 @@ export default function VisitPage() {
                         className="h-14 w-auto object-contain rounded-xl"
                       />
                     </a>
-                    <a href="https://www.facebook.com/p/BLEND-Penkridge-61580861931043/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
                       <Image
                         src="/images/facebook.png"
                         alt="Facebook"

@@ -55,7 +55,7 @@ export function ExperienceSection() {
         <div className="max-w-2xl mb-16 sm:mb-20">
           <div className="reveal inline-flex items-center gap-2 text-[#f4e19f] text-xs font-semibold uppercase tracking-widest mb-4">
             <span className="w-8 h-px bg-[#f4e19f]" />
-            The Blend Experience
+            The BrewKraft Experience
           </div>
           <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
             More than coffee.
@@ -63,7 +63,7 @@ export function ExperienceSection() {
             <span className="text-[#f4e19f]">Much more.</span>
           </h2>
           <p className="reveal text-[#5A5A5A] text-lg mt-5 leading-relaxed">
-            Blend is a space that adapts to you. Morning coffee runs, afternoon study sessions, family weekends,
+            BrewKraft is a space that adapts to you. Morning coffee runs, afternoon study sessions, family weekends,
             or a long catch-up with someone you&apos;ve been meaning to see.
           </p>
         </div>
@@ -102,7 +102,7 @@ export function ExperienceSection() {
             }}
           />
           <p className="relative font-display text-2xl sm:text-3xl lg:text-4xl text-white font-bold leading-tight max-w-2xl mx-auto">
-            &ldquo;Feels like something Penkridge really needed.&rdquo;
+            &ldquo;Feels like something Walsall really needed.&rdquo;
           </p>
           <p className="relative text-white/60 mt-4 text-sm">— A regular visitor</p>
         </div>

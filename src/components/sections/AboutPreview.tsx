@@ -8,7 +8,7 @@ const stats: Array<{ value: string; label: string; logoSrc?: string }> = [
   { value: "4.9★", label: "Rating", logoSrc: "/images/google.png" },
   { value: "33+", label: "Five-Star Reviews" },
   { value: "£1–10", label: "Price Range" },
-  { value: "ST19", label: "Heart of Penkridge" },
+  { value: "WS1", label: "Heart of Walsall" },
 ];
 
 export function AboutPreview() {
@@ -41,8 +41,8 @@ export function AboutPreview() {
           <div className="reveal relative">
             <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
-                src="/images/about1.png"
-                alt="About Blend"
+                src="/images/about1.jpg"
+                alt="About BrewKraft"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -52,7 +52,7 @@ export function AboutPreview() {
             {/* Floating badge */}
             <div className="absolute -bottom-4 -right-4 bg-[#3d1700] rounded-2xl p-5 shadow-xl">
               <p className="text-white font-display text-2xl font-bold">Since</p>
-              <p className="text-white/70 text-sm">Day one in Penkridge</p>
+              <p className="text-white/70 text-sm">Day one in Walsall</p>
             </div>
           </div>
 
@@ -64,14 +64,14 @@ export function AboutPreview() {
             </div>
 
             <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight mb-8">
-              Born in Penkridge.
+              Born in Walsall.
               <br />
               <span className="text-[#e2ca8f]">Built for it.</span>
             </h2>
 
             <div className="reveal space-y-5 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
               <p>
-                Blend started with a simple belief: that Penkridge deserved a café that felt genuinely
+                BrewKraft started with a simple belief: that Walsall deserved a café that felt genuinely
                 special. Not a chain. Not a formula. A real, independent space with good coffee,
                 standout drinks, and a genuine sense of welcome.
               </p>

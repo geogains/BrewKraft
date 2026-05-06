@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import { FloatingShowcase } from "@/components/sections/FloatingShowcase";
 import { FeaturedFavourites } from "@/components/sections/FeaturedFavourites";
 import { ReviewsSection } from "@/components/sections/ReviewsSection";
-import { AboutPreview } from "@/components/sections/AboutPreview";
+import { EventsBanner } from "@/components/sections/EventsBanner";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Blend | Independent Café in Penkridge",
+  title: "BrewKraft | Independent Café in Walsall",
   description:
-    "Blend is Penkridge's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries, in the heart of Penkridge.",
+    "BrewKraft is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries, in the heart of Walsall.",
 };
 
 export default function HomePage() {
   return (
     <>
       <FloatingShowcase />
+      <EventsBanner />
       <FeaturedFavourites />
-      <AboutPreview />
       <ReviewsSection />
       <FAQSection />
       <FinalCTA />

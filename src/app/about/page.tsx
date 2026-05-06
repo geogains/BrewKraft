@@ -20,27 +20,29 @@ const values = [
   {
     icon: Heart,
     title: "A space that belongs to everyone",
-    body: "We're family-friendly, study-friendly, and everything in between. The doors are open and the welcome is genuine. Whoever you are, there's a table for you at Blend.",
+    body: "We're family-friendly, study-friendly, and everything in between. The doors are open and the welcome is genuine. Whoever you are, there's a table for you at BrewKraft.",
   },
   {
     icon: MapPin,
-    title: "Rooted in Penkridge",
-    body: "We're not a chain. We don't pretend to be. We're a local independent business built for the people of Penkridge, and we're proud of every cup we serve here.",
+    title: "Rooted in Walsall",
+    body: "We're not a chain. We don't pretend to be. We're a local independent business built for the people of Walsall, and we're proud of every cup we serve here.",
   },
 ];
 
+// Swap in unique images here once available — each slot maps to one image.
 const bentoImages = [
-  // Row 1: landscape(2) + portrait(1) + portrait(1)
-  { src: "/images/gallery2.jpg", span: "col-span-2 lg:col-span-2", height: "h-52" },
-  { src: "/images/gallery3.jpg", span: "col-span-1",               height: "h-52" },
-  { src: "/images/gallry4.jpg",  span: "col-span-1",               height: "h-52" },
-  // Row 2: portrait(1) + portrait(1) + landscape(2)
-  { src: "/images/gallery5.jpg", span: "col-span-1",               height: "h-64" },
-  { src: "/images/gallery6.jpg", span: "col-span-1",               height: "h-64" },
-  { src: "/images/gallery7.jpg", span: "col-span-2 lg:col-span-2", height: "h-64" },
-  // Row 3: landscape(2) + landscape(2)
-  { src: "/images/gallery8.jpg", span: "col-span-2 lg:col-span-2", height: "h-52" },
-  { src: "/images/gallery9.jpg", span: "col-span-2 lg:col-span-2", height: "h-52" },
+  // Row 1 — wide(2) + narrow(1) + narrow(1)
+  { src: "/images/image99.jpg", span: "col-span-2 lg:col-span-2", height: "h-52" },
+  { src: "/images/image98.jpg", span: "col-span-1",               height: "h-52" },
+  { src: "/images/image97.jpg", span: "col-span-1",               height: "h-52" },
+  // Row 2 — narrow(1) + narrow(1) + wide(2)
+  { src: "/images/image98.jpg", span: "col-span-1",               height: "h-64" },
+  { src: "/images/image97.jpg", span: "col-span-1",               height: "h-64" },
+  { src: "/images/image99.jpg", span: "col-span-2 lg:col-span-2", height: "h-64" },
+  // Row 3 — narrow(1) + narrow(1) + wide(2)
+  { src: "/images/image99.jpg", span: "col-span-1",               height: "h-52" },
+  { src: "/images/image98.jpg", span: "col-span-1",               height: "h-52" },
+  { src: "/images/image97.jpg", span: "col-span-2 lg:col-span-2", height: "h-52" },
 ];
 
 export default function AboutPage() {
@@ -72,7 +74,7 @@ export default function AboutPage() {
           }}
         />
         <div
-          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+          className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/brewkraftbg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="reveal inline-flex items-center gap-2 text-white/60 text-xs font-semibold uppercase tracking-widest mb-6">
@@ -81,11 +83,11 @@ export default function AboutPage() {
             <span className="w-8 h-px bg-white/40" />
           </div>
           <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-[#fff7d6] leading-tight mb-6">
-            Born in Penkridge.
+            Born in Walsall.
             <br />Built for it.
           </h1>
           <p className="reveal text-[#e2ca8c] text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            We started Blend because we believed Penkridge deserved something genuinely special, not a formula, not a chain, but a real independent café with personality, craft, and heart.
+            We started BrewKraft because we believed Walsall deserved something genuinely special, not a formula, not a chain, but a real independent café with personality, craft, and heart.
           </p>
         </div>
 
@@ -103,12 +105,12 @@ export default function AboutPage() {
             {/* Image cluster */}
             <div className="reveal relative">
               <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
-                <Image src="/images/gallery1.png" alt="Blend gallery image" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image src="/images/about1.jpg" alt="BrewKraft gallery image" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
               {/* Quote badge */}
               <div className="absolute -bottom-6 -left-4 bg-[#f4e19f] text-white rounded-2xl p-5 max-w-[220px] shadow-xl">
                 <p className="font-display text-sm font-bold leading-snug">
-                  &ldquo;Just what Penkridge needed! Atmosphere is calming and cosy!&rdquo;
+                  &ldquo;Just what Walsall needed! Atmosphere is calming and cosy!&rdquo;
                 </p>
                 <p className="text-white/60 text-xs mt-2">— Chloe Davies</p>
               </div>
@@ -121,7 +123,7 @@ export default function AboutPage() {
               </h2>
               <div className="reveal space-y-5 text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
                 <p>
-                  Located at 4 Crown Bridge in the heart of Penkridge, Blend is where
+                  Located at 70 Lower Hall Lane in the heart of Walsall, BrewKraft is where
                   Colombian coffee meets community. We serve rich, authentic espresso and filter coffee
                   alongside a thoughtfully crafted drinks menu that spans ceremonial matcha, Kashmiri chai,
                   karak tea, and seasonal specialities.
@@ -137,7 +139,7 @@ export default function AboutPage() {
                   in to work for the afternoon, or bringing the family in for a treat.
                 </p>
                 <p>
-                  We think Penkridge has always deserved a place like this. We&apos;re glad we get to be it.
+                  We think Walsall has always deserved a place like this. We&apos;re glad we get to be it.
                 </p>
               </div>
             </div>
@@ -194,10 +196,10 @@ export default function AboutPage() {
               A <span className="text-[#3d1700]">cosy</span> atmosphere.
             </h2>
             <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed mb-6">
-              The atmosphere at Blend is something people comment on instantly, cosy but aesthetic, calm but social. It&apos;s a space that&apos;s easy to settle into and hard to leave.
+              The atmosphere at BrewKraft is something people comment on instantly, cosy but aesthetic, calm but social. It&apos;s a space that&apos;s easy to settle into and hard to leave.
             </p>
             <p className="text-[#5A5A5A] text-base leading-relaxed mb-8">
-              Whether you&apos;re solo with a laptop, catching up with friends, or bringing the kids in for a weekend treat, Blend adapts around you.
+              Whether you&apos;re solo with a laptop, catching up with friends, or bringing the kids in for a weekend treat, BrewKraft adapts around you.
             </p>
             <Link
               href="/visit"
@@ -213,7 +215,7 @@ export default function AboutPage() {
               <div key={i} className={`${img.span} ${img.height} relative rounded-2xl overflow-hidden`}>
                 <Image
                   src={img.src}
-                  alt="Blend gallery image"
+                  alt="BrewKraft gallery image"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"

@@ -38,7 +38,7 @@ export function VisitSection() {
             <span className="w-8 h-px bg-[#f4e19f]" />
           </div>
           <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
-            Find us in the heart of Penkridge.
+            Find us in the heart of Walsall.
           </h2>
         </div>
 
@@ -110,8 +110,8 @@ export function VisitSection() {
           <div className="reveal lg:col-span-3">
             <div className="w-full h-96 lg:h-full min-h-80 rounded-3xl overflow-hidden border border-[#E4DDD1] relative bg-[#D4CFCA]">
               <iframe
-                src="https://www.google.com/maps?q=4%20Crown%20Bridge%2C%20Penkridge%2C%20Stafford%20ST19%205AA&output=embed"
-                title="Blend location map"
+                src="https://www.google.com/maps?q=70%20Lower%20Hall%20Lane%20Walsall%20WS1%201RH&output=embed"
+                title="BrewKraft location map"
                 className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"
@@ -125,7 +125,7 @@ export function VisitSection() {
         <div className="reveal mt-10 bg-white rounded-3xl p-7 border border-[#E4DDD1]">
           <p className="text-[#5A5A5A] text-sm leading-relaxed">
             <strong className="text-[#1C1C1C]">Easy to get to.</strong>{" "}
-            We&apos;re located at 4 Crown Bridge in Penkridge town centre, minutes from the bus station and Penkridge train station.
+            We&apos;re located at 70 Lower Hall Lane in Walsall town centre, minutes from the bus station and Walsall train station.
           </p>
         </div>
 

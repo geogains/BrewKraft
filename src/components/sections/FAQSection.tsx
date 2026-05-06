@@ -3,10 +3,10 @@ import Link from "next/link";
 const faqs = [
   {
     q: "Do you have Wi-Fi?",
-    a: "Yes, we have free Wi-Fi throughout the café. Blend is a favourite spot for working and studying.",
+    a: "Yes, we have free Wi-Fi throughout the café. BrewKraft is a favourite spot for working and studying.",
   },
   {
-    q: "Is Blend family-friendly?",
+    q: "Is BrewKraft family-friendly?",
     a: "Absolutely. We welcome families and children. The space is relaxed and there&apos;s plenty of room.",
   },
   {

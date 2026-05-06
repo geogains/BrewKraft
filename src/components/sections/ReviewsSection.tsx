@@ -31,7 +31,7 @@ export function ReviewsSection() {
 
   return (
     <section ref={sectionRef} className="relative bg-[#1C1C1C] py-20 sm:py-28 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/brewkraftbg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -41,7 +41,7 @@ export function ReviewsSection() {
             <span className="w-8 h-px bg-[#f7e8b8]" />
           </div>
           <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Loved by Penkridge.
+            Loved by Walsall.
           </h2>
 
           {/* Rating badge */}
@@ -105,7 +105,7 @@ export function ReviewsSection() {
         {/* CTA to Google */}
         <div className="reveal text-center mt-12">
           <a
-            href="https://www.google.com/maps/search/Cafe+23+Walsall"
+            href="https://www.google.com/maps/search/BrewKraft+70+Lower+Hall+Lane+Walsall+WS1+1RH"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#f7e8b8] font-semibold text-sm hover:text-white transition-colors border-b border-[#f7e8b8]/30 hover:border-[#f7e8b8] pb-0.5"

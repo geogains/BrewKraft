@@ -18,7 +18,7 @@ export function Hero() {
       />
       {/* Texture layer */}
       <div
-        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
+        className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/brewkraftbg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]"
       />
 
       {/* Content */}

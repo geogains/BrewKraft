@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const floatingItems = [
   {
-    src: "/images/1.png",
+    src: "/images/cup12.png",
     alt: "Iced Matcha Latte",
     delay: "0s",
     animation: "animate-float-slow",
@@ -15,7 +15,7 @@ const floatingItems = [
     position: "top-6 left-[5%] sm:left-[3%]",
   },
   {
-    src: "/images/2.png",
+    src: "/images/benedicto.png",
     alt: "Kashmiri Chai",
     delay: "0.8s",
     animation: "animate-float-medium",
@@ -33,7 +33,7 @@ const floatingItems = [
     position: "top-1/2 -translate-y-1/2 left-[-1%] sm:left-[1%]",
   },
   {
-    src: "/images/10.png",
+    src: "/images/matchaa.png",
     alt: "Cinnamon Roll",
     delay: "0.4s",
     animation: "animate-float-medium",
@@ -51,7 +51,7 @@ const floatingItems = [
     position: "bottom-20 left-[2%] sm:left-[8%]",
   },
   {
-    src: "/images/cup1.png",
+    src: "/images/frappuccino1.png",
     alt: "Pastry",
     delay: "1.6s",
     animation: "animate-float-slow",
@@ -117,7 +117,7 @@ export function FloatingShowcase() {
         </svg>
       </div>
 
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg1.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/brewkraftbg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Glass container */}
         <div className="rounded-3xl border border-white/50 bg-white/15 shadow-2xl shadow-black/5 backdrop-blur-sm">
@@ -126,10 +126,10 @@ export function FloatingShowcase() {
           <div className="relative z-10 text-center max-w-lg px-4">
             {/* DESKTOP HEADING SIZE CONTROL — adjust lg/xl values here */}
             <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-              MORE <span className="text-[#fff7d6]">ESPRESSO,</span> LESS <span className="text-[#3d1700]">DEPRESSO!</span>
+              KRAFTING <span className="text-[#fff7d6]">MOMENTS,</span> BREWING <span className="text-[#3d1700]">LEGACY!</span>
             </h2>
             <div className="reveal mt-10 sm:mt-12 lg:mt-0 bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5">
-              <p className="text-[#fff7d6] text-base sm:text-lg leading-relaxed">
+              <p className="text-[#3d1700] text-base sm:text-lg leading-relaxed">
                 From our silky matcha lattes to our legendary loaded croissants, everything on the menu is made to make your day a little better.
               </p>
             </div>
