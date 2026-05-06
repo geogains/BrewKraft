@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     url: "https://brewkraft.vercel.app/",
     images: [
       {
-        url: "https://brewkraft.vercel.app/images/preview3.png",
-        secureUrl: "https://brewkraft.vercel.app/images/preview3.png",
+        url: "https://brewkraft.vercel.app/images/preview4.png",
+        secureUrl: "https://brewkraft.vercel.app/images/preview4.png",
         width: 1200,
         height: 630,
         alt: "BrewKraft preview",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BrewKraft",
     description: "Colombian coffee. Signature matcha. Kashmiri chai.",
-    images: ["https://brewkraft.vercel.app/images/preview3.png"],
+    images: ["https://brewkraft.vercel.app/images/preview4.png"],
   },
   icons: {
     icon: "/images/favicon1.png",
