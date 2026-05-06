@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
+Sitemap: https://brewkraft.vercel.app/sitemap.xml
