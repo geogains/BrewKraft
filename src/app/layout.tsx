@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://blend-snowy.vercel.app"),
+  metadataBase: new URL("https://brewkraft.vercel.app"),
   title: {
     default: "BrewKraft | Independent Café in Walsall",
     template: "%s | BrewKraft Walsall",
@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     siteName: "BrewKraft",
     title: "BrewKraft",
     description: "Colombian coffee. Signature matcha. Kashmiri chai. A cosy space in Walsall.",
-    url: "https://blend-snowy.vercel.app/",
+    url: "https://brewkraft.vercel.app/",
     images: [
       {
-        url: "https://blend-snowy.vercel.app/images/preview3.png",
-        secureUrl: "https://blend-snowy.vercel.app/images/preview3.png",
+        url: "https://brewkraft.vercel.app/images/preview3.png",
+        secureUrl: "https://brewkraft.vercel.app/images/preview3.png",
         width: 1200,
         height: 630,
         alt: "BrewKraft preview",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BrewKraft",
     description: "Colombian coffee. Signature matcha. Kashmiri chai.",
-    images: ["https://blend-snowy.vercel.app/images/preview3.png"],
+    images: ["https://brewkraft.vercel.app/images/preview3.png"],
   },
   icons: {
     icon: "/images/favicon1.png",
