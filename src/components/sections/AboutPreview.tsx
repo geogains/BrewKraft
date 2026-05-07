@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const stats: Array<{ value: string; label: string; logoSrc?: string }> = [
   { value: "4.9★", label: "Rating", logoSrc: "/images/google.png" },
-  { value: "33+", label: "Five-Star Reviews" },
+  { value: "230+", label: "Five-Star Reviews" },
   { value: "£1–10", label: "Price Range" },
   { value: "WS1", label: "Heart of Walsall" },
 ];

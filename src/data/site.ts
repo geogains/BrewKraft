@@ -26,6 +26,6 @@ export const siteConfig = {
     tiktok: "@blendfullstop",
   },
   rating: 4.9,
-  reviewCount: "33+",
+  reviewCount: "230+",
   priceRange: "£1–10",
 };
